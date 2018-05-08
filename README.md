@@ -1,2 +1,3 @@
 # diceRoller
-This program will roll a pair of dice, and estimate the expected value from a finite number of trials.
+This program rolls a pair of dice,
+and compares the expected value with the average from a finite number of trials.

@@ -8,18 +8,24 @@ class Dice {
 		int numberOfSides;
 		int sum;
 		int totalTrials;
-		int estimatedExpectedValue; // This will be calculated with avg of all trials
-		int trueExpectedValue; // determined by maths formula
+		double estimatedExpectedValue; // calculated with avg of all trials
+		double trueExpectedValue; // determined by maths formula
     public:
-		int getDice1(int) const;
-		int getDice2(int) const;
-		int getNumberOfSides(int) const;
-		int getSum(int) const;
-		void setDice1(int);
-		void setDice2(int);
-		void setSum(int);
-		void setNumberOfSides(int);
-		void rollDice();
+		int getDice1() const { return dice1; }
+		int getDice2() const { return dice2; }
+		int getNumberOfSides() const { return numberOfSides; }
+		int getSum() const {return sum; }
+		int getTotalTrials() const {return totalTrials; }
+		double getEstimatedExpectedValue() const { return estimatedExpectedValue; }
+		double getTrueExpectedValue() const { return trueExpectedValue; }
+		void setDice1(int val) { dice1 = val; }
+		void setDice2(int val) { dice2 = val; }
+		void setSum(int val) { sum = val; }
+		void setNumberOfSides(int val) { numberOfSides = val; }
+		void setTotalTrials(int val) { totalTrials = val; }
+		void setEstimatedExpectedValue(double val) { estimatedExpectedValue = val; }
+		void setTrueExpectedValue(double val) { trueExpectedValue = val; }
+		void rollDice(); // defined in Dice.cpp
 };
 
 #endif

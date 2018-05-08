@@ -1,5 +1,6 @@
 // Dice.cpp
 #include <iostream>
+#include <cstdlib>
 #include <ctime>
 #include "Dice.hpp"
 
@@ -16,7 +17,6 @@ Dice::Dice() {
 }
 
 void Dice::rollDice(int numberOfSidesInput, int numberOfTrialsInput) {
-	srand(time(NULL));
 	numberOfSides = numberOfSidesInput;
 	numberOfTrials = numberOfTrialsInput;
 	for (int i = 0; i < numberOfTrials; i++) {
@@ -31,4 +31,3 @@ void Dice::rollDice(int numberOfSidesInput, int numberOfTrialsInput) {
 	std::cout << "Average result: " << averageResult << '\n';
 	std::cout << "Expected Value: " << expectedValue << '\n';
 }
-
